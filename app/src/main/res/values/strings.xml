@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BuginGroup</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    action_settings
+    <string name="coordinatar_card">Coordinator Layout</string>
+    <string name="coordinatar_card_desc">The Design library introduces CoordinatorLayout, a layout which provides an additional level of control over touch events between child views, something which many of the components in the Design library take advantage of.</string>
+    <string name="appBarLayout_card">AppBarLayout</string>
+    <string name="appBarLayout_card_desc">AppBarLayout allows your Toolbar and other views (such as tabs provided by TabLayout) to react to scroll events in a sibling view marked with a ScrollingViewBehavior. Now, as the user scrolls, the AppBarLayout can respond to those events by using the children’s scroll flags to control how they enter (scroll on screen) and exit (scroll off screen)</string>
+    <string name="collapsing_toolbar_card">Collapsing Toolbar</string>
+    <string name="collapsing_toolbar_card_desc">Adding a Toolbar directly to an AppBarLayout gives you access to the enterAlwaysCollapsed and exitUntilCollapsed scroll flags, but not the detailed control on how different elements react to collapsing. For that, you can use CollapsingToolbarLayout.</string>
+
+    <string name="restouran_name">Alisher</string>
+    <string name="toolbar_name">alisher</string>
+
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sem a malesuada rhoncus. Pellentesque ut dolor a dui porttitor porta lacinia non libero. Nunc volutpat arcu quis quam convallis molestie. Etiam ac tristique sem, id commodo justo. Phasellus congue tincidunt lectus, at dignissim ligula maximus eu. Quisque interdum nunc eget tellus bibendum suscipit. Phasellus feugiat ultricies posuere. Nullam porta accumsan velit, ut rutrum massa fermentum eu. Nunc ac bibendum nunc. Mauris eu ultricies ipsum. Ut id dolor dui. Pellentesque dictum dui vel tempus maximus. Vivamus non nisi quis libero scelerisque pretium. Ut eu tristique justo. Sed pellentesque placerat quam, ut ultricies turpis feugiat a. Aliquam a volutpat risus.
+
+Praesent at lectus semper, suscipit elit in, facilisis massa. Phasellus sed vestibulum ante, a euismod sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin tincidunt orci augue, a porta odio lacinia eu. Nunc in congue risus. Maecenas commodo nibh ac enim fermentum, eu sagittis massa blandit. Vestibulum elementum massa nec dapibus mollis. Etiam porta, est sit amet aliquet porta, odio elit finibus risus, id rutrum purus mi non ipsum. Nulla viverra nec enim sed venenatis.
+
+Maecenas mattis, erat et viverra euismod, neque diam porttitor tellus, in fringilla metus est id augue. Nunc at metus cursus, porttitor nisi vitae, congue diam. Curabitur ligula massa, ullamcorper eget scelerisque vel, pharetra ac sapien. Ut auctor luctus ultricies. Nullam semper tortor ac elementum luctus. In et tempus ex. Praesent sodales, dolor id volutpat elementum, ligula enim euismod odio, maximus sodales magna neque nec neque. Curabitur pretium nisl neque, consequat aliquet dui tincidunt ac. Vivamus augue nunc, aliquet eu ex a, ultrices aliquam lorem. Duis nibh lectus, ultricies vel iaculis sit amet, imperdiet id sapien. Duis scelerisque sodales metus eu rutrum. Suspendisse posuere nisi ac magna consequat, eu vestibulum ipsum venenatis. Suspendisse auctor nisi nec leo venenatis tristique.
+
+Praesent tincidunt lorem sit amet mi consequat cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vitae blandit sapien. Curabitur est sapien, lobortis sit amet facilisis vel, faucibus eu quam. Nam tempus libero at tellus tempor laoreet. Pellentesque quam lorem, tincidunt in molestie eget, dictum vel risus. Nunc gravida convallis mattis.
+    </string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

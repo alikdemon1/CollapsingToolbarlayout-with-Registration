@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <ImageView
+                    android:id="@+id/img_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/dinner"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+                <FrameLayout
+                    android:id="@+id/main.framelayout.title"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/primary"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="parallax">
+
+                    <LinearLayout
+                        android:id="@+id/main.linearlayout.title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name_rest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="bottom|center"
+                            android:text="@string/restouran_name"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/street_rest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="4dp"
+                            android:text="Street: Abaya"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/email_rest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="4dp"
+                            android:text="Email: alikdemon@gmail.com"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            app:behavior_overlapTop="30dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_anchor="@id/main.framelayout.title"
+            android:background="@color/primary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <Space
+                    android:layout_width="@dimen/image_final_width"
+                    android:layout_height="@dimen/image_final_width"
+                    />
+
+                <TextView
+                    android:id="@+id/main_textview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_width"
+            android:layout_gravity="top"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/dinner"
+            app:border_color="@android:color/white"
+            app:border_width="2dp"
+            app:layout_behavior="com.alisher.android.bugingroup.AvatarImageBehavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
